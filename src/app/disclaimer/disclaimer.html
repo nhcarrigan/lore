@@ -1,0 +1,22 @@
+@if (showModal()) {
+<div class="fixed top-0 left-0 w-full h-full flex items-center justify-center text-center z-50">
+    <div id="modal" class="p-5">
+        <aside>
+            <h1 class="text-2xl font-bold">Disclaimer</h1>
+            <p>This website incorporates AI-generated art. Before you proceed, we wanted to make our position clear:</p>
+            <ul class="list-disc list-inside text-left">
+                <li>Our company do not support the use of AI to replace human artists.</li>
+                <li>Our company are aware of the ethical concerns around generative AI and how training data are sourced.</li>
+                <li>We have a long history of supporting and promoting human artists, and have no intention of changing that.</li>
+                <li>However, because we currently operate at a significant loss, our budget is very limited.</li>
+                <li>When funds allow, we absolutely intend to replace all art on this page with human-created works.</li>
+            </ul>
+            <p>If you are an artist and would like to donate art, or if you have cash and would like to donate to our cause, check our <a href="https://donate.nhcarrigan.com" target="_blank">donation page</a>.</p>
+            <p>Thank you for understanding our position. We appreciate your support as we work toward our goal of featuring exclusively human-created art.</p>
+            <p>ALL NAMES, CHARACTERS, AND ORGANISATIONS (EXCEPT NAOMI AND NHCARRIGAN) ARE FICTIONAL AND DO NOT REPRESENT REAL PEOPLE OR ORGANISATIONS. ANY RESEMBLANCE TO REAL PEOPLE OR ORGANISATIONS IS PURELY COINCIDENTAL.</p>
+        </aside>
+        <button (click)="closeModal()" class="mt-5 border-r-4 border-b-4 border-l-4 border-t-2 border-accent rounded-md p-2 cursor-pointer">I understand and wish to continue.</button>
+    </div>
+</div>
+<div id="modal-overlay" class="fixed top-0 left-0 w-full h-full bg-black/75 z-40"></div>
+}

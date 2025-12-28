@@ -1,0 +1,6 @@
+#modal {
+    background-color: var(--color-background);
+    border-radius: 10px;
+    border: 2px solid var(--color-accent);
+    color: var(--color-primary);
+}

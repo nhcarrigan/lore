@@ -1,0 +1,17 @@
+.ticker-bg {
+    background-color: var(--color-ticker);
+    color: var(--color-primary);
+}
+
+.ticker-scroll {
+    animation: scroll-horizontal 600s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

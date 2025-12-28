@@ -1,20 +1,10 @@
-# New Repository Template
+# Lore
 
-This template contains all of our basic files for a new GitHub repository. There is also a handy workflow that will create an issue on a new repository made from this template, with a checklist for the steps we usually take in setting up a new repository.
-
-If you're starting a Node.JS project with TypeScript, we have a [specific template](https://github.com/naomi-lgbt/nodejs-typescript-template) for that purpose.
-
-## Readme
-
-Delete all of the above text (including this line), and uncomment the below text to use our standard readme template.
-
-<!-- # Project Name
-
-Project Description
+A web app that contains the lore for Naomi's fictional persona and characters.
 
 ## Live Version
 
-This page is currently deployed. [View the live website.]
+This page is currently deployed. [View the live website.](https://lore.nhcarrigan.com)
 
 ## Feedback and Bugs
 
@@ -36,4 +26,4 @@ Copyright held by Naomi Carrigan.
 
 ## Contact
 
-We may be contacted through our [Chat Server](http://chat.nhcarrigan.com) or via email at `contact@nhcarrigan.com`. -->
+We may be contacted through our [Chat Server](http://chat.nhcarrigan.com) or via email at `contact@nhcarrigan.com`.

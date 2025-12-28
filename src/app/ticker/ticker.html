@@ -1,0 +1,15 @@
+<div class="w-full overflow-hidden whitespace-nowrap z-30 py-2 ticker-bg">
+    <div class="inline-block whitespace-nowrap ticker-scroll">
+        @for (phrase of phrases; track phrase) {
+            <span class="inline-block m-0 p-0 whitespace-nowrap">{{ phrase }}</span>
+            <span class="inline-block mx-4 opacity-70"> • </span>
+        }
+        <!-- Duplicate content for seamless loop -->
+        <span aria-hidden="true">
+            @for (phrase of phrases; track phrase) {
+                <span class="inline-block m-0 p-0 whitespace-nowrap">{{ phrase }}</span>
+                <span class="inline-block mx-4 opacity-70"> • </span>
+            }
+        </span>
+    </div>
+</div>

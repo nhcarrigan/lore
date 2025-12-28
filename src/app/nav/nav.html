@@ -1,0 +1,21 @@
+<nav class="w-full z-30 p-2 flex justify-between items-center" [class.menu-open]="isMenuOpen">
+    <div>
+        <a routerLink="/"><p>NHCarrigan</p></a>
+    </div>
+    <button 
+        class="hamburger-btn" 
+        (click)="toggleMenu()"
+        aria-label="Toggle menu"
+        aria-expanded="{{isMenuOpen}}">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="nav-menu" [class.menu-open]="isMenuOpen">
+        <a routerLink="/about" (click)="closeMenu()"><li>About</li></a>
+        <a routerLink="/handbook" (click)="closeMenu()"><li>Handbook</li></a>
+        <a routerLink="/faq" (click)="closeMenu()"><li>FAQ</li></a>
+        <a routerLink="/reviews" (click)="closeMenu()"><li>Reviews</li></a>
+        <a routerLink="/staff" (click)="closeMenu()"><li>Staff</li></a>
+    </ul>
+</nav>

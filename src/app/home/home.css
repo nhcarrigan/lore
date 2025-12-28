@@ -1,0 +1,61 @@
+pre {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    border: 2px dashed var(--color-accent);
+}
+
+.typing-container {
+    display: block;
+}
+
+.typing-line {
+    display: block;
+    overflow: hidden;
+    white-space: pre;
+    width: 0;
+    animation: typing-line 0.8s steps(30, end) forwards;
+}
+
+.line-1 {
+    animation-delay: 0s;
+}
+
+.line-2 {
+    animation-delay: 0.8s;
+}
+
+.line-3 {
+    animation-delay: 1.6s;
+}
+
+.line-4 {
+    animation-delay: 2.4s;
+}
+
+.line-5 {
+    animation-delay: 3.2s;
+}
+
+.typing-cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing-line {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}

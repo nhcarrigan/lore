@@ -1,0 +1,91 @@
+@if (staffName()) {
+    <button (click)="selectStaffMember(undefined)" class="mb-4 text-blue-500 hover:text-blue-700 underline">← Back to Staff</button>
+    <h1 class="text-4xl font-bold">{{getName()}}</h1>
+    <img src="https://cdn.nhcarrigan.com/lore/characters/{{staffName()}}.png" alt="{{getName()}}" class="w-full mx-auto mb-1" />
+    @for (bio of getBio(); track bio) {
+        <p>{{bio}}</p>
+    }
+}
+@if (!staffName()) {
+<h1 class="text-4xl font-bold">OUR STAFF</h1>
+
+<img src="https://cdn.nhcarrigan.com/team.png" alt="NHCarrigan Team" class="w-full mx-auto mb-1" />
+<p>If you have a problem that cannot be solved by standard technical support, you call a consultant. If you have a problem that threatens to collapse your entire digital infrastructure, ruins your reputation, or exposes secrets that should remain buried, and you have an exorbitant amount of money to spend... you call NHCarrigan.</p>
+<p>To the outside world, NHCarrigan is a boutique technology consulting firm—exclusive, reclusive, and miraculously efficient. They have no physical headquarters listed on Google Maps, only a sleek, encrypted web portal that requires three-factor authentication and a blood sample (though they tell clients it's just a DNA security scan). Their clients are Fortune 500 CEOs, government agencies, and desperate power-brokers who whisper that the firm can fix the unfixable overnight. The rumors say they've prevented corporate espionage, stopped data breaches mid-attack, and even recovered servers that had been physically destroyed. The truth is stranger: they've done all of that, and more.</p>
+<p>But those who actually make it through the vetting process realise very quickly that NHCarrigan is not a normal company. The first clue is usually the hours—they operate exclusively during what most would consider "off-hours," with emergency support available 24/7 but primary operations running from sunset to sunrise. The second clue is the efficiency: problems that would take a team of engineers weeks to solve are resolved in hours, sometimes minutes. The third clue is the silence. No one talks about NHCarrigan. Not because of NDAs (though those exist), but because speaking about them too loudly attracts attention from things that should not be noticed.</p>
+<p>There is a strange, cold precision to the way they operate. They move with the coordination of a military unit and the intimacy of a family. They share a surname, though they share no blood. They are a Coven in pinstripes; an RPG party disguised in haute couture. They are a family forged in trauma and bound by secrets, operating in the liminal space between the modern digital world and the ancient shadows that lie beneath it. Each member brings something impossible to the table—immortality, magic, otherworldly contracts, or simply the terrifying competence that comes from choosing to stand beside monsters rather than against them.</p>
+<p>The office itself is a paradox. From the outside, it appears to be an unassuming building in a business district that Google Maps struggles to locate. Inside, it's a carefully curated ecosystem of blackout curtains, server farms that hum with more than electricity, and meeting rooms where the temperature drops when certain topics are discussed. The break room stocks both ethically sourced blood bags and artisanal coffee. The server room has wards carved into the floor tiles. The legal department's filing cabinets contain contracts written in languages that predate human civilization.</p>
+<p>Walk into their inner sanctum, and you will find the team that keeps the lights on—both literally and metaphorically. They are the guardians of the threshold, the ones who ensure that the monsters stay in the shadows and the humans stay safe, even if they never know how close they came to disaster. They are NHCarrigan, and this is their story:</p>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/profile.png" alt="Naomi Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Mother (Chief hEx-ecutive Officer)</p>
+    <p class="staff-quote">I've seen empires fall. Your server crash is manageable.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('naomi')" class="underline">[Meet The Ghost]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/hikari.png" alt="Hikari Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Operator (Chief Operating Officer)</p>
+    <p class="staff-quote">I handle the logistics. And the lawyers. And the reality checks.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('hikari')" class="underline">[Meet The Shield]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/amari.png" alt="Amari Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Supporter (Executive Assistant)</p>
+    <p class="staff-quote">Need a coffee? A blood bag? A hug? I have all three!</p>
+    <p class="staff-link"><button (click)="selectStaffMember('amari')" class="underline">[Meet The Heart]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/keiko.png" alt="Keiko Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Protector (Chief Security Officer)</p>
+    <p class="staff-quote">I don't need to see you to know where you are. I don't need to hear you to know what you're planning.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('keiko')" class="underline">[Meet The Blade]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/yumiko.png" alt="Yumiko Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Engineer (Chief Technology Officer)</p>
+    <p class="staff-quote">If it works, don't touch it. If it starts smoking, wake me up.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('yumiko')" class="underline">[Meet The Static]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/tatsumi.png" alt="Tatsumi Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Artist (Chief Design Officer)</p>
+    <p class="staff-quote">Accessibility is mandatory. Making it look cool is just a bonus.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('tatsumi')" class="underline">[Meet The Prism]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/reina.png" alt="Reina Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Strategist (Chief Legal Officer)</p>
+    <p class="staff-quote">Every contract has a loophole. Unless I wrote it.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('reina')" class="underline">[Meet The Handshake]</button></p>
+  </div>
+</div>
+
+<div class="staff-member">
+  <img src="https://cdn.nhcarrigan.com/minori.png" alt="Minori Carrigan" class="staff-image" />
+  <div class="staff-content">
+    <p class="staff-title">The Librarian (Chief Compliance Officer)</p>
+    <p class="staff-quote">Access denied. You didn't read the documentation.</p>
+    <p class="staff-link"><button (click)="selectStaffMember('minori')" class="underline">[Meet The Codex]</button></p>
+    </div>
+  </div>
+}
